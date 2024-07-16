@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-200;
+}
+
+button[type='button'],
+button[type='submit'] {
+  @apply bg-inherit text-gray-500;
+}
+
+button[type='submit'] {
+  @apply border-b border-b-blue-200;
+}
+
+button[type='submit']:hover,
+button[type='submit']:focus-visible {
+  @apply text-gray-700 scale-110;
+}
+
+input[type='text'] {
+  @apply w-full block rounded-md;
+}
